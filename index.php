@@ -1,7 +1,16 @@
 <?php
 
 include 'config.php'; // literally just a normal php file, using this instead of .env cos i wanted to keep it completely packageless. Just remember to make sure config.php is included in our .gitignore so that any sensitive keys dont get committed to source!
-// see example config file for use
+
+if(!isset($env)){
+        echo "config.php not set correctly";
+        return;
+}
+
+if(!isset($env['OPEN_AI_API_KEY'])){
+        echo "You need to add your own API key to the config.php file";
+        return;
+}
 
 $api_key = $env['OPEN_AI_API_KEY']; // $env is coming from config.php if not obvious ;P
 $api_url = 'https://api.openai.com/v1/chat/completions';
