@@ -1,7 +1,7 @@
 # openai_php
 Connect a PHP project to the OpenAI API without any extra packages.
 
-I wanted to use OpenAI's API in a lightweight project using as few packages as possible and couldnt find any existing projects.\n
+I wanted to use OpenAI's API in a lightweight project using as few packages as possible and couldnt find any existing examples that do it.
 Therefore I built this. It's just 2 files and no dependencies. Simple ^_^
 
 ### Setup
