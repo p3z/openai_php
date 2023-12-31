@@ -23,7 +23,7 @@ $data = [
         ['role' => 'user', 'content' => 'Describe the purpose of json to someone who is computer illiterate, do so in verbosely poetic old english.']
     ],
     'temperature' => 0.7,
-    //"max_tokens": 2000
+    //"max_tokens" => 2000
 ];
 
 $options = [
